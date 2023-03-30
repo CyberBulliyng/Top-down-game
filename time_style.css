@@ -1,0 +1,110 @@
+.restart_tg{
+  position: absolute;
+  top: 27%;
+  width: 50%;
+}
+#pred_start_tg{
+  background-size: contain;
+  display: none;
+}
+#pred_start_tg>h2{
+  position: absolute;
+  top: 4%;
+  left: 40%;
+  color: white;
+  font-size: 4em;
+  font-family: RussianPunk;
+}
+#pred_start_tg>p{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: white;
+  font-size: 2em;
+  font-family: Aqum;
+}
+#back_menu{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+#reiting_tg{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+#start_tg{
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+#window_2{
+  width: 80%;
+  height: 85%;
+  border: 2px solid black;
+  position: absolute;
+  overflow:hidden;
+  top: 60px;
+  left: 150px;
+  display: none;
+  z-index: -10;
+}
+@font-face{
+  font-family: Aqum;
+  src: url(fonts/Aqum.ttf);
+}
+@font-face{
+  font-family: RussianPunk;
+  src: url(fonts/RussianPunk.ttf);
+}
+#window_2>h3{
+  position: absolute;
+  left: 75%;
+  font-size: 2em;
+  font-family: Aqum;
+}
+/*Элементы карты кошки-мышки */
+/*Игрок в обычном режиме*/
+#player_0{
+  width: 60px;
+  height: 60px;
+  background: url(image/GG.png) 50% 50% no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: none;
+}
+/*жизни героя*/
+#hp_0{
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  height: 50px;
+  width: 200px;
+  border-radius: 3px;
+  z-index: -5;
+}
+#window_2>h4{
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  font-size: 1.5em;
+}
+#hp_0::-webkit-progress-bar{
+  height: 30px;
+  background: rgb(87,176, 255);
+  border-radius: 2px;
+}
+#hp_0::-webkit-progress-value{
+  height: 30px;
+  background: rgb(255,151, 187);
+  border-radius: 2px;
+}
+
+.enemy_0 {
+  background-size: 100%;
+}
+
+.bullet_0{
+  background: url(image/bullet.png) 50% 50% no-repeat;
+  background-size: contain;
+}

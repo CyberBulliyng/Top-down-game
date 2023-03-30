@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Играпопытка</title>
+	<link rel="shortcut icon" href="image/sword.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="projectstyle.css">
+	<link rel="stylesheet" type="text/css" href="buttons.css">
+    <link rel="stylesheet" type="text/css" href="time_style.css">
+    <link rel="stylesheet" type="text/css" href="coop_style.css">
+	<!-- подключение бибилиотеки jQuery   -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- подключение бибилиотеки jQueryUI -->
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="projectJS.js"></script>
+	<script type="text/javascript" src="projectJSTIME.js"></script>
+	<script type="text/javascript" src="projectJSCOOP.js"></script>
+</head>
+<body>
+	<div id="startwindow">
+
+			<button id="startgame"></button>
+
+	</div>
+	<div class="cutscene1">
+		<div></div>
+	</div>
+	<div class="cutscene2">
+		<div></div>
+	</div>
+	<div id="game">
+		<div id="menugame">
+			<h2 id="namegame">Newborn Survival</h2>
+			<!--Кнопка возврата на главный экран-->
+			<!--Первая игра кошки-мышки-->
+			<button id="start">Singleplayer Game</button>
+			<button id="startweb">Multiplayer Game</button>
+			<button id="starttime">Time Game</button>
+			<button id="settings">Settings</button>
+		</div>
+		<div id="restart">
+			<h3>You dead</h3>
+			<button class="continue">Continue</button>
+			<button class="restart">Restart</button>
+            <button class="restart_tg">Restart</button>
+           	<button class="restart_coop">Restart</button>
+			<button class="menu">Menu</button>
+			<div class="nextmusic"></div>
+		</div>
+		<div id="winner">
+			<h3>You winner!</h3>
+			<button id="menuwinner">Menu</button>
+		</div>
+		<div class="settings">
+			<button id="back">Back</button>
+			<h3 id="settingaudio">Setting Audio</h3>
+			<h3 id="settingmove">Setting Control<br>Single Game and<br>Time Game</h3>
+
+			<h3 id="move">Movement</h3>
+			<h3 id="controller">Rotation<br>Shot</h3>
+			<div id="movement"></div>
+			<div id="movement1"></div>
+			<div id="control"></div>
+			<button id="null_table_reiting">Reset the Table</button>
+			<div class="audio">
+				<button id="play"></button>
+	    		<button id="pause"></button>
+	    		<button id="restartaudio"></button>
+	    	 	<button id="next"></button>
+	    		<input type="range" max="100" min="0" value="0" id="volume">
+	    		<h5></h5>
+    		</div>
+		</div>
+		<div id="window1">
+                    <h4></h4>
+                    <progress value="10" max="10" id="hp"></progress>
+                    <div id="player"></div>
+                    <h3></h3>
+                    <div id="transition"></div>
+		</div>
+		<div id="pred_start_tg">
+                    <h2>Time Game</h2>
+                    <button id="back_menu">Back</button>
+                    <button id="reiting_tg">Ranking</button>
+                    <button id="start_tg">Start Game</button>
+                    <p></p>
+		</div>
+                <div id="window_2">
+                    <h4></h4>
+                    <progress value="10" max="10" id="hp_0"></progress>
+                    <div id="player_0"></div>
+                    <h3></h3>
+                </div>
+        <div id="pred_start_coop">
+                <h2>Multiplayer Game</h2>
+                <button id="back_menu_coop">Back</button>
+                <button id="start_coop">Start Game On One PC</button>
+                <button id="start_coop_two">Start Game On<br>Different PC</button>
+                <h3>Control players</h3>
+                <div id="control_play_a">
+                	Игрок 1
+                	<div id="pla1"></div>
+                	<div id="pla2"></div>
+                </div>
+                <div id="control_play_b">
+                	Игрок 2
+                	<div id="plb1"></div>
+                	<div id="plb2"></div>
+                </div>
+                <p></p>
+		</div>
+                <div id="window_3">
+                    <h4 id="a"></h4>
+                    <progress value="10" max="10" id="hp_a"></progress>
+
+                    <div id="player_a"></div>
+                    <div id="player_b">
+                    	<div id="aim"></div>
+                    </div>
+                    
+                    <h4 id="b"></h4>            
+                    <progress value="10" max="10" id="hp_b"></progress>
+                    <h3></h3>
+                    
+                    <div id="transition_coop"></div>
+
+		</div>
+	</div>
+
+</body>
+</html>

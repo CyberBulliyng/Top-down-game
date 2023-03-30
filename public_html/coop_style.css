@@ -1,0 +1,254 @@
+/*окно режима*/
+#window_3{
+  width: 90%;
+  height: 85%;
+  border: 2px solid black;
+  position: absolute;
+  overflow:hidden;
+  top: 60px;
+  left: 150px;
+  display: none;
+  z-index: -10;
+}
+@font-face{
+  font-family: Aqum;
+  src: url(fonts/Aqum.ttf);
+}
+@font-face{
+  font-family: RussianPunk;
+  src: url(fonts/RussianPunk.ttf);
+}
+#window_3>h3{
+  position: absolute;
+  left: 40%;
+  font-size: 2em;
+  font-family: Aqum;
+}
+#window_3>h4{
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  font-size: 1.5em;
+}
+
+#pred_start_coop{
+  background-size: contain;
+  top: -10px;
+  left: 0%;
+  width: 100%;
+  height: 1500px;
+  display: none;
+  margin: 0px;
+  padding: 0px;
+}
+#pred_start_coop {
+    background: linear-gradient(45deg, #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000);
+    background-size: 800% 800%;
+
+    animation: AnimationName 6s ease infinite;
+}
+@keyframes AnimationName {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+#pred_start_coop>h2{
+  position: absolute;
+  top: 4%;
+  left: 33%;
+  color: white;
+  font-size: 4em;
+  font-family: RussianPunk;
+}
+#pred_start_coop>h3{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  color: white;
+  font-size: 2.5em;
+  font-family: RussianPunk;
+}
+#start_coop{
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+#start_coop_two{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+#back_menu_coop{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+#control_play_a{
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  width: 30%;
+  height: 40%;
+  color: white;
+  font-size: 1.5em;
+  font-family: RussianPunk;
+}
+#pla1{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: url(image/wasd.png) 50% 50% no-repeat;
+  background-size: contain;
+}
+#pla2{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background: url(image/jkl.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+#control_play_b{
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  width: 30%;
+  height: 40%;
+  color: white;
+  font-size: 1.5em;
+  font-family: RussianPunk;
+}
+#plb1{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: url(image/arrow.png) 50% 50% no-repeat;
+  background-size: contain;
+}
+#plb2{
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    background: url(image/мышка.png) 50% 50% no-repeat;
+    background-size: contain;
+}
+/**/
+.enemy_3 {
+    background-size: 100%;
+}
+
+
+/*параметры игрока*/
+#player_a{
+  width: 60px;
+  height: 60px;
+  background: url(image/GG.png) 50% 50% no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: none;
+}
+
+#player_b{
+  width: 60px;
+  height: 60px;
+  background: url(image/GG.png) 50% 50% no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: none;
+}
+#aim{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -100px;
+  left: 15px;
+  background: url(image/aim.png) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+/*жизни героя*/
+#hp_a{
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  height: 50px;
+  width: 200px;
+  border-radius: 3px;
+  z-index: -5;
+}
+#window_3>h4#a{
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  font-size: 1.5em;
+}
+#hp_a::-webkit-progress-bar{
+  height: 30px;
+  background: rgb(87,176, 255);
+  border-radius: 2px;
+}
+#hp_a::-webkit-progress-value{
+  height: 30px;
+  background: rgb(255,151, 187);
+  border-radius: 2px;
+}
+
+
+/*жизни героя*/
+#hp_b{
+  position: absolute;
+  top: 3%;
+  left: 80%;
+  height: 50px;
+  width: 200px;
+  border-radius: 3px;
+  z-index: -5;
+}
+#window_3>h4#b{
+  position: absolute;
+  top: 3%;
+  left: 87%;
+  font-size: 1.5em;
+}
+#hp_b::-webkit-progress-bar{
+  height: 30px;
+  background: rgb(87,176, 255);
+  border-radius: 2px;
+}
+#hp_b::-webkit-progress-value{
+  height: 30px;
+  background: rgb(255,151, 187);
+  border-radius: 2px;
+}
+
+
+.restart_coop{
+  position: absolute;
+  top: 27%;
+  width: 50%;
+}
+
+.bullet_3{
+  background: url(image/bullet.png) 50% 50% no-repeat;
+  background-size: contain;
+}
+
+#transition_coop{
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  width: 20%;
+  height: 20%;
+  background: url(image/arrowright.png) 50% 50% no-repeat;
+  background-size: contain; 
+  display: none;
+}
